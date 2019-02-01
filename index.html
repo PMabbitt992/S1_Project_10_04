@@ -20,6 +20,7 @@
 
     <link href="rnt_base.css" rel="stylesheet" />
     <link href="rnt_styles.css" rel="stylesheet" />
+    <link href="rnt_audio.css" rel="stylesheet" />
 
 </head>
 
@@ -37,6 +38,10 @@
     </header>
 
     <figure>
+        <!-- Linked youtube video -->
+        <iframe src="https://www.youtube.com/embed/ie2Mspukx14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
         <figcaption>Robert Frost reads <cite>The Road Not Taken</cite></figcaption>
     </figure>
 
@@ -70,7 +75,13 @@
 
         <section class="poem">
             <h2>Fire and Ice</h2>
-
+            <!-- Audio with 2 sources, plug-in support, and text for notification if audio is not supported -->
+            <audio controls>
+                <source src="rnt_fireice.mp3" type="audio/mp3">
+                <source src="rnt_fireice.oog" type="audio/oog">
+                <embed src="rnt_fireice.mp3" width="250px" height="50px" controller autoplay showcontrols autostart>
+                <p>No embedded audio is supported</p>
+            </audio>
             <p>
                 Some say the world will end in fire,<br />
                 Some say in ice.<br />
@@ -86,7 +97,13 @@
 
         <section class="poem">
             <h2>Devotion</h2>
-
+            <!-- Audio with 2 sources, plug-in support, and text for notification if audio is not supported -->
+            <audio controls>
+                <source src="rnt_devotion.mp3" type="audio/mp3">
+                <source src="rnt_devotion.ogg" type="audio/oog">
+                <embed src="rnt_devotion.mp3" width="250px" height="50px" controller autoplay showcontrols autostart>
+                <p>No embedded audio is supported</p>
+            </audio>
             <p>
                 The heart can think of no devotion<br />
                 Greater than being shore to the ocean&mdash;<br />
